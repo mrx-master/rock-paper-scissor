@@ -34,7 +34,7 @@ function win(userChoice, computerChoice) {
 	computerScore_span.innerHTML = computerScore
 	result_p.innerHTML = convertToWord(userChoice) + " beats " + convertToWord(computerChoice) + ". You Win!!"
 	document.getElementById(userChoice).classList.add("green-glow")
-	setTimeout(function() { document.getElementById(userChoice).classList.remove('green-glow') }, 500)
+	setTimeout(function() { document.getElementById(userChoice).classList.remove('green-glow') }, 1000)
 }
 
 function lose(userChoice, computerChoice) {
@@ -43,7 +43,7 @@ function lose(userChoice, computerChoice) {
 	userScore_span.innerHTML = userScore
 	result_p.innerHTML = convertToWord(userChoice) + " loses to " + convertToWord(computerChoice) + ". You Lost!!"
 	document.getElementById(userChoice).classList.add("red-glow")
-	setTimeout(function() { document.getElementById(userChoice).classList.remove('red-glow') }, 500)
+	setTimeout(function() { document.getElementById(userChoice).classList.remove('red-glow') }, 1000)
 }
 
 function draw(userChoice, computerChoice) {
@@ -51,7 +51,7 @@ function draw(userChoice, computerChoice) {
 	userScore_span.innerHTML = userScore
 	result_p.innerHTML = convertToWord(userChoice) + " equals " + convertToWord(computerChoice) + ". Draw"
 	document.getElementById(userChoice).classList.add("gray-glow")
-	setTimeout(function() { document.getElementById(userChoice).classList.remove('gray-glow') }, 500)
+	setTimeout(function() { document.getElementById(userChoice).classList.remove('gray-glow') }, 1000)
 }
 
 function game(userChoice) {
